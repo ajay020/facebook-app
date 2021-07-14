@@ -1,0 +1,105 @@
+.Rightbar {
+  flex: 3.5;
+}
+.RightbarWrapper {
+  padding: 20px 20px 0 0;
+}
+.BdayContainer {
+  display: flex;
+  align-items: center;
+}
+.BdayImg {
+  width: 45px;
+  height: 45px;
+  margin-right: 8px;
+}
+.BdayText {
+  font-size: 15px;
+  font-size: 300;
+}
+.AdImg {
+  width: 100%;
+  border-radius: 12px;
+  margin: 20px 0px 20px 0;
+}
+.RightbarFriendList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.RightbarFriendListItem {
+  display: flex;
+  align-items: center;
+  margin: 14px 0;
+  /* background-color: teal; */
+  position: relative;
+}
+.RightbarProfileImg {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+.RightbarOnline {
+  background-color: rgb(27, 246, 19);
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 8%;
+  border: 2px white solid;
+}
+.RightbarText {
+  margin-left: 12px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.RightbarTitle {
+  margin-bottom: 20px;
+}
+.RightbarInfoItem {
+  margin-bottom: 12px;
+}
+
+.RightbarInfoKey {
+  font-weight: 300;
+  margin-right: 12px;
+}
+
+.RightbarInfoValue {
+  font-weight: 500;
+}
+.RightbarFollowings {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.RightbarFollowing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.RightbarFollowingImg {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.RightbarFollowBtn {
+  background: rgb(50, 126, 246);
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  /* border: 1px solid blue; */
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 8px;
+}
+.RightbarFollowBtn:focus {
+  outline: none;
+}

@@ -1,0 +1,94 @@
+.Share {
+  margin: 12px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 10px 3px rgba(0, 0, 0, 0.57);
+  -webkit-box-shadow: 0px 2px 10px 3px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 0px 2px 10px 3px rgba(0, 0, 0, 0.57);
+}
+.ShareWrapper {
+  padding: 12px;
+}
+.ShareTop {
+  display: flex;
+  align-items: center;
+  padding-bottom: 14px;
+}
+.ShareInput {
+  border: none;
+  width: 80%;
+  margin-left: 15px;
+  padding: 8px;
+  font-size: 18px;
+}
+.ShareInput:focus {
+  outline: none;
+}
+.ShareProfileImg {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.ShareHr {
+  margin: 12px 10px;
+}
+.ShareBottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 12px;
+  padding: 14px 0;
+}
+.ShareOptions {
+  /* flex: 1; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: rosybrown; */
+}
+.ShareOption {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 16px;
+  cursor: pointer;
+}
+.ShareOption:hover {
+  background: rgb(246, 245, 245);
+  /* padding: 4px; */
+}
+.ShareOptionText {
+  margin-left: 8px;
+}
+.ShareBtn {
+  border: 1px solid green;
+  background-color: green;
+  color: white;
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.ShareBtn:hover {
+  color: black;
+  background: rgb(3, 192, 3);
+}
+.ShareImgContainer {
+  position: relative;
+  /* padding: 0 20px 10px 20px; */
+}
+.ShareImg {
+  width: 100%;
+  height: 450px;
+  object-fit: fill;
+}
+
+.CancelShareImg {
+  position: absolute;
+  top: 5px;
+  right: 2px;
+  opacity: 0.5;
+  cursor: hand;
+  background: white;
+  padding: 4px;
+}

@@ -1,0 +1,45 @@
+.Profile {
+  display: flex;
+}
+
+.ProfileRight {
+  flex: 9;
+}
+
+.ProfileCover {
+  height: 320px;
+  position: relative;
+  /* background-color: blue; */
+}
+.ProfileCoverImg {
+  height: 230px;
+  width: 100%;
+}
+
+.ProfileUserImg {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 150px;
+  margin: auto;
+  border: 3px solid white;
+}
+.ProfileCoverInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ProfileInfoName {
+  font-size: 24px;
+}
+.ProfileInfoDesc {
+  /* font-size: 14px; */
+  font-weight: 300;
+}
+.ProfileRightBottom {
+  display: flex;
+}

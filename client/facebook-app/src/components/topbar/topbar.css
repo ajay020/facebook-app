@@ -1,0 +1,88 @@
+.TopbarContainer {
+  display: flex;
+  background: rgb(29, 106, 250);
+  justify-content: space-around;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  height: 50px;
+  z-index: 99;
+}
+.TopLeft {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+}
+.LogoTitle {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+.TopCenter {
+  flex: 5;
+  /* background: red; */
+}
+.Searchbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 30px;
+}
+.TopSearchIcon {
+  cursor: pointer;
+  font-size: 20px !important;
+  margin-left: 8px;
+}
+.SearchInput {
+  border: none;
+  width: 100%;
+  padding: 12px;
+  border-radius: 30px;
+}
+.SearchInput:focus {
+  outline: none;
+}
+.TopRight {
+  flex: 5;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.TopIcons {
+  display: flex;
+}
+.TopLink {
+  color: white;
+  margin-right: 12px;
+  cursor: pointer;
+}
+.TopIconItem {
+  position: relative;
+  margin-right: 12px;
+  cursor: pointer;
+
+  /* background: green; */
+}
+.TopIconBadge {
+  width: 12px;
+  height: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: red;
+  color: white;
+  position: absolute;
+  top: -7px;
+  right: -5px;
+  border-radius: 50%;
+  font-size: 12px;
+  padding: 1px;
+}
+.TopImg {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}

@@ -1,0 +1,94 @@
+.Login {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2f0f5;
+  /* border: 1px solid black; */
+}
+.LoginWrapper {
+  width: 70%;
+  height: 70%;
+  display: flex;
+
+  /* background-color: yellow; */
+}
+.LoginLeft,
+.LoginRight {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.LoginLogo {
+  font-size: 50px;
+  font-weight: 700;
+  color: #1775ee;
+  margin-bottom: 8px;
+}
+
+.LoginDesc {
+  font-size: 24px;
+}
+
+.LoginForm {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 24px;
+  border-radius: 12px;
+}
+
+.LoginInput {
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+}
+.LoginInput:focus {
+  outline: none;
+}
+.fgroup {
+  margin-bottom: 10px;
+}
+.LoginBtn {
+  padding: 12px;
+  background-color: #1775ee;
+  color: white;
+  border: none;
+  font-weight: 700;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+.ForgotPassTxt {
+  font-size: 14px;
+  align-self: center;
+  color: #1775ee;
+  cursor: pointer;
+}
+.RegisterBtn {
+  border: none;
+  padding: 12px;
+  background: rgb(3, 199, 3);
+  color: white;
+  width: 100%;
+  font-weight: 400;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 12px;
+  align-self: center;
+}
+
+.LoginBtn,
+.RegisterBtn:focus {
+  outline: none;
+}
+.LoginBtn:disabled {
+  cursor: not-allowed;
+}
+.RegisterLink {
+  width: 70%;
+  align-self: center;
+}

@@ -1,0 +1,28 @@
+.RightbarFriendListItem {
+  display: flex;
+  align-items: center;
+  margin: 14px 0;
+  /* background-color: teal; */
+  position: relative;
+}
+.RightbarProfileImg {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.RightbarOnline {
+  background-color: rgb(27, 246, 19);
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 8%;
+  border: 2px white solid;
+}
+.RightbarText {
+  margin-left: 12px;
+  font-size: 14px;
+  font-weight: bold;
+}

@@ -1,6 +1,7 @@
 const router = require('express').Router()
 const User = require('../models/User')
 const bcrypt = require('bcrypt')
+const mongoose = require('mongoose')
 
 //Update user
 router.put("/:id", async (req, res) =>{
@@ -42,11 +43,16 @@ router.delete("/:id", async (req, res) =>{
         res.status(403).json("You can Delete only your account")
     }
 })
+
 // get a user
-router.get("/:id", async (req, res) =>{
+router.get("/", async (req, res) =>{
+    const userId = req.query.userId;
+    const username = req.query.username;
 
     try {
-        const user =   await User.findById(req.body.userId)
+        const user =  userId ? await User.findById(userId) 
+                            : await User.findOne({username:username})
+                            
         const {password, createdAt,isAdmin, ...other} = user._doc
         res.status(200).json(other)
     } catch (error) {
@@ -54,6 +60,30 @@ router.get("/:id", async (req, res) =>{
         res.status(500).json(error)
     } 
 })
+
+// get friends of a user
+router.get("/friends/:userId", async(req, res)=>{
+    try {
+        // console.log("userid ===", req.params.userId)
+        const user = await User.findById(req.params.userId)
+        const friendList = await Promise.all(
+            user.followings.map(friendId =>{
+                return  User.findById(friendId)
+            })
+        )
+        const friends= []
+        friendList.map(friend => {
+            const {_id, username, profilePic} = friend;
+            friends.push({_id, username, profilePic})
+        })
+        res.status(200).json(friends)
+
+    } catch (error) {
+        console.log(error)
+        res.status(500).json(error)
+    }
+})
+
 // follow a user
 router.put("/:id/follow", async (req, res) =>{
     if(req.params.id !== req.body.userId){
@@ -102,5 +132,6 @@ router.put("/:id/unfollow", async (req, res) =>{
     }
    
 })
+
 
 module.exports = router
